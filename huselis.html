@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listing</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/be92704daf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="navBar" class="navbar-white">
+        <img src="images/logo-red.png" class="logo">
+        <ul class="nav-links">
+            <li><a href="#" class="active">Popular Places</a></li>
+            <li><a href="#">Travel Outside</a></li>
+            <li><a href="#">Online Packages</a></li>
+        </ul>
+        <a href="#" class="register-btn">Register Now</a>
+        <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+      </nav>
+
+      <div class="container">
+        <div class="list-container">
+          <div class="left-col">
+            <p>200+ Options</p>
+            <h1>Recommended places In San Francisco</h1>
+             <div class="house1" id="objectinsert">
+                
+             </div>
+             
+            
+           </div> 
+             <div class="right-col">
+               <div class="sidebar">
+                <h2>Search Filters</h2>
+                <h3>Property Type</h3>
+                <div class="filter">
+                  <input id="house" type="checkbox" value="House"> <p>House</p> <span>(3)</span>
+                </div>
+                <div class="filter">
+                  <input id="hostel" type="checkbox" value="Hostel"> <p>Hostel</p> <span>(2)</span>
+                </div>
+                <div class="filter">
+                  <input id="flat" type="checkbox" value="Flat"> <p>Flat</p> <span>(4)</span>
+                </div>
+                <div class="filter">
+                  <input id="villa" type="checkbox"> <p>Villa</p> <span>(5)</span>
+                </div>
+                <div class="filter">
+                  <input id="guest" type="checkbox" value="Guest Suite"> <p>Guest Suite</p> <span>(2)</span>
+                </div>
+                <h3>Amenities</h3>
+                <div class="filter">
+                  <input id="aircondition" type="checkbox" value="Air Conditioning"> <p>Air Conditioning</p> <span>(16)</span>
+                </div>
+                <div class="filter">
+                  <input id="wifi" type="checkbox" value="Wifi"> <p>Wifi</p> <span>(16)</span>
+                </div>
+                <div class="filter">
+                  <input id="gym" type="checkbox" value="Gym"> <p>Gym</p> <span>(2)</span>
+                </div>
+                <div class="filter">
+                  <input id="pool" type="checkbox" value="Pool"> <p>Pool</p> <span>(3)</span>
+                </div>
+                <div class="filter">
+                  <input id="kitchen" type="checkbox" value="Kitchen"> <p>Kitchen</p> <span>(5)</span>
+                </div>
+                <div class="sidebar-link">
+                 <a href="#" onclick="listing()"><input type="button" value="Search"></a>
+                </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination">
+        <img src="images/arrow.png">
+        <span class="current">1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>&middot;&middot;&middot;&middot;</span>
+        <span>20</span>
+        <img src="images/arrow.png" class="right-arrow">
+      </div>
+
+      <div class="footer">
+        <a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://instragram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <hr>
+       <p>Copyright @ 2023.All Rights Reserved</p>
+      </div>
+
+       <script>
+        var navBar=document.getElementById("navBar");
+        
+        function togglebtn(){
+          navBar.classList.toggle("hidemenu");
+        }
+  
+      </script>
+      <script src="js/listing.js"></script>
+
+
+</body>
+</html>
